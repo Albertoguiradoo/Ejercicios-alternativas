@@ -4,17 +4,17 @@
 usuarioSecreto = "Pepe"
 contraSecreta = "asdasd"
 
-usuario=str(input("Dime el usuario: \n"))
-contraseña= str(input("Ahora, dime la contraseña: \n"))
+usuario=input("Dime el usuario: \n")
+contraseña= input("Ahora, dime la contraseña: \n")
 
 print (usuario!=usuarioSecreto)
 
-while (usuario!=usuarioSecreto and contraseña!=contraSecreta):
+while (usuario!=usuarioSecreto or contraseña!=contraSecreta):
     
     if(usuario!=usuarioSecreto):
         print("Usuario erróneo, intentelo de nuevo.")
         usuario= str(input("Dime el usuario: \n"))
-    else:
+    if(contraseña!=contraSecreta):
         print("Contraseña errónea, intentelo de nuevo.")
         contraseña= str(input("Dime la contraseña: \n"))
 

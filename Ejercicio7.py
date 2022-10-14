@@ -3,7 +3,18 @@
 # El exponente sea 0, el resultado es 1.
 # El exponente sea negativo, el resultado es 1/potencia con el exponente
 
-num1 = 0
-num2 = 0
 
-num1 = int(input("Dime el primer número: \n"))
+
+base1 = 0
+exponente = 0
+
+base1 = int(input("Dime el número: \n"))
+exponente = int(input("Dime el exponente: \n"))
+
+if(exponente>0):
+    print(base1,"^",exponente,"=", base1**exponente)
+if(exponente==0):
+    print(base1,"^",exponente,"=1")
+if(exponente<0):
+    print(base1,"^",exponente,"=", 1/(base1**-exponente))
+
